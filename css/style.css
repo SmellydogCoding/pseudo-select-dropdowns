@@ -1,0 +1,103 @@
+/*
+|------------------------|
+|---- Global Styles -----|
+|------------------------|
+*/
+
+body {
+  text-align: center;
+}
+
+button {
+  display: block;
+  margin: 1.0em auto;
+  
+}
+
+/*
+|---------------------------|
+|---- Drop-Down Styles -----|
+|---------------------------|
+*/
+
+.dropdownWrapper {
+  position: relative;
+  display: inline-block;
+  margin: 0.5em;
+}
+
+.option-container, li {
+  cursor: pointer;
+}
+
+.option-container {
+  display: inline-block;
+  position: relative;
+  border: 3px solid black;
+  width: 7.0em;
+  height: 2.0em;
+}
+
+.option-label {
+  position: absolute;
+  margin: 0.35em 0 0 1.0em;
+  display: inline-block
+}
+
+.option-arrow {
+  display: inline-block;
+  text-align: right;
+  margin-top: -2px;
+}
+
+.option-arrow img {
+  width: 32%;
+  -webkit-transition: all .5s; /* Safari */
+  transition: all .5s;
+}
+
+.dropdownWrapper ul {
+  position: absolute;
+  padding: 0;
+  width: 7.4em;
+  margin-top: -0.4em;
+  background: #fff;
+  z-index: 1000;
+}
+
+.dropdownWrapper ul li {
+  border-left: 3px solid black;
+  border-right: 3px solid black;
+  list-style: none;
+  padding: 0.5em 1.0em;
+}
+
+/* margin top of first li === padding on the span inside the ul */
+
+.dropdownWrapper ul li:first-of-type {
+  border-top: 3px solid black;
+}
+
+.dropdownWrapper ul li:last-of-type {
+  border-bottom: 3px solid black;
+}
+
+.dropdownWrapper ul li:hover {
+  background-color: #ccc;
+}
+
+/*
+|-------------------------|
+|---- Helper Classes -----|
+|-------------------------|
+*/
+
+.hidden {
+  display: none;
+}
+
+.spin {
+  -ms-transform: rotate(180deg); /* IE 9 */
+  -webkit-transform: rotate(180deg); /* Chrome, Safari, Opera */
+  transform: rotate(180deg);
+}

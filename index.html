@@ -1,0 +1,88 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<title>Pseudo Drop-Down Test</title>
+  <link href='https://fonts.googleapis.com/css?family=Roboto:400,500,700' rel='stylesheet' type='text/css'>
+	<link rel="stylesheet" href="css/style.css">
+</head>
+<body>
+  <form id="myForm">
+    <select id="selectbox1">
+      <option value="thisIsOption1" selected>option 1</option>
+      <option value="thisIsOption2">option 2</option>
+      <option value="thisIsOption3">option 3</option>
+      <option value="thisIsOption4">option 4</option>
+      <option value="thisIsOption5">option 5</option>
+    </select>
+    <select id="selectbox2">
+      <option value="thisIsOption6" selected>option 6</option>
+      <option value="thisIsOption7">option 7</option>
+      <option value="thisIsOption8">option 8</option>
+      <option value="thisIsOption9">option 9</option>
+      <option value="thisIsOption10">option 10</option>
+    </select>
+    <select id="selectbox3">
+      <option value="thisIsOption11" selected>option 11</option>
+      <option value="thisIsOption12">option 12</option>
+      <option value="thisIsOption13">option 13</option>
+      <option value="thisIsOption14">option 14</option>
+      <option value="thisIsOption15">option 15</option>
+    </select>
+  </form>
+  <h1>Pseudo-Dropdowns</h1>
+  <p>
+    These look like select elements but they are actually a collection of spans and uls that are styled to look like selects.<br>
+    The advantage to this method is that they can be styled, unlike selects.
+  </p>
+  <div class="dropdownWrapper">
+    <span id="option-set1" class="option-container" data-selectid="selectbox1">
+      <span class="option-label">option 1</span>
+      <span class="option-arrow">
+        <img src="img/arrow-down.svg" alt="down-arrow">
+      </span>
+    </span>
+    <ul id="dropdown1" class="hidden">
+      <li class="hidden" data-option="thisIsOption1">option 1</li>
+      <li class="hidden" data-option="thisIsOption2">option 2</li>
+      <li class="hidden" data-option="thisIsOption3">option 3</li>
+      <li class="hidden" data-option="thisIsOption4">option 4</li>
+      <li class="hidden" data-option="thisIsOption5">option 5</li>
+    </ul>
+  </div>
+  <div class="dropdownWrapper">
+    <span id="option-set2" class="option-container" data-selectid="selectbox2">
+      <span class="option-label">option 6</span>
+      <span class="option-arrow">
+        <img src="img/arrow-down.svg" alt="down-arrow">
+      </span>
+    </span>
+    <ul id="dropdown2" class="hidden">
+      <li class="hidden" data-option="thisIsOption6">option 6</li>
+      <li class="hidden" data-option="thisIsOption7">option 7</li>
+      <li class="hidden" data-option="thisIsOption8">option 8</li>
+      <li class="hidden" data-option="thisIsOption9">option 9</li>
+      <li class="hidden" data-option="thisIsOption10">option 10</li>
+    </ul>
+  </div>
+  <div class="dropdownWrapper">
+    <span id="option-set3" class="option-container" data-selectid="selectbox3">
+      <span class="option-label">option 11</span>
+      <span class="option-arrow">
+        <img src="img/arrow-down.svg" alt="down-arrow">
+      </span>
+    </span>
+    <ul id="dropdown3" class="hidden">
+      <li class="hidden" data-option="thisIsOption11">option 11</li>
+      <li class="hidden" data-option="thisIsOption12">option 12</li>
+      <li class="hidden" data-option="thisIsOption13">option 13</li>
+      <li class="hidden" data-option="thisIsOption14">option 14</li>
+      <li class="hidden" data-option="thisIsOption15">option 15</li>
+    </ul>
+  </div>
+  <button type="submit" form="myForm">Submit</button>
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.1.0/jquery.min.js"></script>
+  <script src="js/app.js"></script>
+</body>
+</html>
